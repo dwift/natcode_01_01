@@ -19,12 +19,22 @@ class BallView: UIView {
     var lineWeight:CGFloat = 5 { didSet { setNeedsDisplay() } }
     
     @IBInspectable
-    var color: UIColor = UIColor.blue
+    var color: UIColor = UIColor.blue { didSet { setNeedsDisplay() } }
+    
+    @IBInspectable
+    var xspeed:CGFloat = 1.1
+    
+    @IBInspectable
+    var yspeed:CGFloat = 3.3
+    
+    @IBInspectable
+    var location:CGPoint = CGPoint(x: 0, y: 0)
     
     override func draw(_ rect: CGRect) {
         // Drawing code
         color.set()
-        ballPath(atCenter: UICenter, ofRadius: 20*scale).stroke()
+        location = ballLocation()
+        ballPath(atCenter: location, ofRadius: 20*scale).stroke()
         
     }
     
@@ -39,8 +49,8 @@ class BallView: UIView {
         return path
     }
     
-    private func ballLocation() {
-        
+    private func ballLocation() -> CGPoint {
+        return CGPoint(x: bounds.midX, y: bounds.midY)
     }
     
 }
