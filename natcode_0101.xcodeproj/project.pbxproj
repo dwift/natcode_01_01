@@ -12,6 +12,8 @@
 		D20CAE7C1EC66EC700171F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20CAE7A1EC66EC700171F10 /* Main.storyboard */; };
 		D20CAE7E1EC66EC700171F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20CAE7D1EC66EC700171F10 /* Assets.xcassets */; };
 		D20CAE811EC66EC700171F10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20CAE7F1EC66EC700171F10 /* LaunchScreen.storyboard */; };
+		D20CAE8A1EC6714500171F10 /* Dwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CAE891EC6714500171F10 /* Dwift.swift */; };
+		D20CAE8C1EC674A100171F10 /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CAE8B1EC674A100171F10 /* BallView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D20CAE7D1EC66EC700171F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D20CAE801EC66EC700171F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D20CAE821EC66EC700171F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20CAE891EC6714500171F10 /* Dwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dwift.swift; sourceTree = "<group>"; };
+		D20CAE8B1EC674A100171F10 /* BallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		D20CAE751EC66EC700171F10 /* natcode_0101 */ = {
 			isa = PBXGroup;
 			children = (
-				D20CAE761EC66EC700171F10 /* AppDelegate.swift */,
+				D20CAE891EC6714500171F10 /* Dwift.swift */,
+				D20CAE881EC6711500171F10 /* SupportingFiles */,
 				D20CAE781EC66EC700171F10 /* ViewController.swift */,
 				D20CAE7A1EC66EC700171F10 /* Main.storyboard */,
-				D20CAE7D1EC66EC700171F10 /* Assets.xcassets */,
+				D20CAE8B1EC674A100171F10 /* BallView.swift */,
 				D20CAE7F1EC66EC700171F10 /* LaunchScreen.storyboard */,
-				D20CAE821EC66EC700171F10 /* Info.plist */,
 			);
 			path = natcode_0101;
+			sourceTree = "<group>";
+		};
+		D20CAE881EC6711500171F10 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D20CAE761EC66EC700171F10 /* AppDelegate.swift */,
+				D20CAE7D1EC66EC700171F10 /* Assets.xcassets */,
+				D20CAE821EC66EC700171F10 /* Info.plist */,
+			);
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20CAE8A1EC6714500171F10 /* Dwift.swift in Sources */,
 				D20CAE791EC66EC700171F10 /* ViewController.swift in Sources */,
 				D20CAE771EC66EC700171F10 /* AppDelegate.swift in Sources */,
+				D20CAE8C1EC674A100171F10 /* BallView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
